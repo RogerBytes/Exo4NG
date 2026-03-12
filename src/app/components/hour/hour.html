@@ -1,0 +1,8 @@
+<ul>
+  <li><strong>Ville : </strong> {{ timezone().name }}</li>
+  <li><strong>Timezone : </strong> {{ timezone().zoneId }}</li>
+  <!--
+    <li> <strong>Heure :  </strong> {{ updateTimes(timezone) | date: 'HH:mm:ss' }}</li>
+  -->
+  <li><strong>Heure : </strong> {{ updateTimes(timezone) | date: 'HH:mm:ss' }}</li>
+</ul>
